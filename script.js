@@ -1,5 +1,5 @@
 const isTouchDevice = 'ontouchstart' in document.documentElement;
-const url = 'https://www.pornhub.com/random';
+const url = 'https://cors-anywhere.herokuapp.com/https://www.pornhub.com/random';
 const titleH1 = document.querySelector('.title');
 
 titleH1.innerText = isTouchDevice ? 'Tap anywhere!' : 'Click anywhere!'; 
