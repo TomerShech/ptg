@@ -2,7 +2,7 @@ const isTouchDevice = 'ontouchstart' in document.documentElement;
 const url = 'https://cors-anywhere.herokuapp.com/https://www.pornhub.com/random';
 const titleH1 = document.querySelector('.title');
 
-titleH1.innerText = isTouchDevice ? 'Tap anywhere!' : 'Click anywhere!'; 
+titleH1.innerText = `${isTouchDevice ? 'Tap' : 'Click'} anywhere!`;
 
 async function generateTitle() {
     try {
